@@ -17,15 +17,15 @@ The structure of the document consists of five files:
 Specification Paper sections are separated on `sections/` folder (these are used as source to generate `specification_paper.md` file).
 
 Current draft proposal includes 11 sections + references (this may be changed by community, as anything else!):
-- [01_Introduction.md](sections/01_Introduction.md) : expected release date -> Q2 2019
-- [02_Network.md](sections/02_Network.md) : expected release date -> Q2+ 2019
-- [03_Numbers.md](sections/03_Numbers.md) : expected release date -> Q2 2019
-- [04_Cryptography.md](sections/04_Cryptography.md) : expected release date -> Q2 2019
-- [05_Assets.md](sections/05_Assets.md) : expected release date -> Q2+ 2019
-- [06_Transactions.md](sections/06_Transactions.md) : expected release date -> Q2+ 2019
-- [07_NeoVM_NeoContract.md](sections/07_NeoVM_NeoContract.md) : expected release date -> Q2 2019
-- [08_dBFT.md](sections/08_dBFT.md) : first released 14 March, 2019. **PDF:** [Delegated Byzantine Fault Tolerance: Technical details, challenges and perspectives](releases/08_dBFT.pdf)
-- [09_SmartEconomy.md](sections/09_SmartEconomy.md) : expected release date -> Q2+ 2019
+- [Introduction.md](sections/Introduction.md) : expected release date -> Q2 2019
+- [Network.md](sections/Network.md) : expected release date -> Q2+ 2019
+- [Numbers.md](sections/Numbers.md) : expected release date -> Q2 2019
+- [Cryptography.md](sections/Cryptography.md) : expected release date -> Q2 2019
+- [Assets.md](sections/Assets.md) : expected release date -> Q2+ 2019
+- [Transactions.md](sections/Transactions.md) : expected release date -> Q2+ 2019
+- [NeoVM_NeoContract.md](sections/NeoVM_NeoContract.md) : expected release date -> Q2 2019
+- [dBFT.md](sections/dBFT.md) : first released 14 March, 2019. **PDF:** [Delegated Byzantine Fault Tolerance: Technical details, challenges and perspectives](https://github.com/NeoResearch/yellowpaper/blob/master/releases/08_dBFT.pdf)
+- [SmartEconomy.md](sections/SmartEconomy.md) : expected release date -> Q2+ 2019
 - References (automatically generated from [references.bib](doc-base/references.bib)): expected release date -> Q2+ 2019
 
 
