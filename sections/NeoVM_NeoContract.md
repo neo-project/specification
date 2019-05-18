@@ -102,18 +102,6 @@ NEWMAP     | 199     | C7  | none  | (1): `map{}`  | none     | A Map is created
 TODO: continue
 
 
-
-#### Stack Isolation (224-228)
-
-Word          | Opcode | Hex | Input     | Output  | Parameter | Description
--------------:| ------ | --- | --------- | ------- | --------- | -----------
-CALL_I        | 224    | E0  | none      | `R` items  | `R`(1B),`P`(1B),`n`(2B)      | Current context is copied to the invocation stack (similar to CALL). Read return count (1-byte), parameter count (1-byte) and a 2-byte value n for jump to be performed.
-CALL_E        | 225    | E1  | none      | `R` items  | `R`(1B),`P`(1B),`scripthash`(20B)      | Reads a scripthash and executes the corresponding contract (similar to APPCALL). Read return count (1-byte), parameter count (1-byte) and a 20-byte scripthash.
-CALL_ED       | 226    | E2  | `scripthash` (20B)  | `R` items  | `R`(1B),`P`(1B)      | Reads a scripthash and executes the corresponding contract (similar to dynamic invoke APPCALL). Read return count (1-byte) and parameter count (1-byte). The 20-byte scripthash is pop from main stack.
-CALL_ET        | 227    | E3  | none      | `R` (?)  | `R`(1B),`P`(1B),`scripthash`(20B)      | Reads a scripthash and executes the corresponding contract (similar to TAILCALL). Read return count (1-byte), parameter count (1-byte) and a 20-byte scripthash. Disposes the top item on invocation stack.
-CALL_EDT       | 228    | E4  | `scripthash` (20B)  | `R` (?)  | `R`(1B),`P`(1B)      | Reads a scripthash and executes the corresponding contract (similar to dynamic invoke TAILCALL). Read return count (1-byte) and parameter count (1-byte). The 20-byte scripthash is pop from main stack. Disposes the top item on invocation stack.
-
-
 #### Exceptions (240-241)
 
 Word          | Opcode | Hex | Input     | Output  | Parameter | Description
