@@ -1,15 +1,50 @@
 #!/bin/bash
 echo "" > specification.md
 cd sections
-for f in `ls *.md`; do
-   echo "" >> ../specification.md
-   # Preamble is just needed for isolated chapter generation
-   chapterFileName=`echo $f | cut -d'.' -f 1`
-   python chapter_heading.py "${chapterFileName}.yaml" >> ../specification.md
-   echo "" >> ../specification.md
-   cat $f >> ../specification.md
-   echo "" >> ../specification.md
-   echo "&nbsp; \newpage" >> ../specification.md
-done
+
+echo "" >> ../specification.md
+cat Introduction.md >> ../specification.md
+echo "" >> ../specification.md
+echo "&nbsp; \newpage" >> ../specification.md
+
+echo "" >> ../specification.md
+cat Network.md >> ../specification.md   
+echo "" >> ../specification.md
+echo "&nbsp; \newpage" >> ../specification.md
+
+echo "" >> ../specification.md
+cat Numbers.md >> ../specification.md
+echo "" >> ../specification.md
+echo "&nbsp; \newpage" >> ../specification.md
+
+echo "" >> ../specification.md
+cat Cryptography.md >> ../specification.md
+echo "" >> ../specification.md
+echo "&nbsp; \newpage" >> ../specification.md
+
+echo "" >> ../specification.md
+cat Assets.md >> ../specification.md
+echo "" >> ../specification.md
+echo "&nbsp; \newpage" >> ../specification.md
+
+echo "" >> ../specification.md
+cat NeoVM_NeoContract.md >> ../specification.md
+echo "" >> ../specification.md
+echo "&nbsp; \newpage" >> ../specification.md
+
+echo "" >> ../specification.md
+python chapter_heading.py "dBFT.yaml" >> ../specification.md
+echo "" >> ../specification.md
+cat dBFT.md >> ../specification.md   
+echo "" >> ../specification.md
+echo "&nbsp; \newpage" >> ../specification.md
+
+echo "" >> ../specification.md
+python chapter_heading.py "SmartEconomy.yaml" >> ../specification.md
+echo "" >> ../specification.md
+cat SmartEconomy.md >> ../specification.md   
+echo "" >> ../specification.md
+echo "&nbsp; \newpage" >> ../specification.md
+
 cd ..
 cp -r sections/images .
