@@ -3,7 +3,7 @@
 Neo mainly uses SHA-256 and RIPEMD-160 functions for hashing.
 Digital Signatures are performed via elliptic curves (ECDSA), standard P-256 (secp256r1), which is quite similar to Bitcoin (secp256k1).
 
-## Current cryptography and NeoQS
+## NeoQS
 
 NeoQS envisioned a cryptographic system based on Lattice problems.
 In particular, in the White Paper, a mechanism based on Shortest Vector Problem (SVP) and Closest Vector Problem (CVP)

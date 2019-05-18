@@ -5,7 +5,7 @@ _This section is part of the Community Yellow Paper ^[See [Community Yellow Pape
 **WARNING:** this section is an **unreleased draft**.
 It is expected to be incomplete or even to carry incorrect information, so feel free to contribute with us!
 
-## Blockchain Networks: nodes and wallets
+## Blockchain Networks
 
 A Blockchain can be seen and defined differently, depending on the interests around it.
 For example, technically speaking, a blockchain can be seen as a data structure capable of handling immutability of records and transparency, however it can also be seen as a **protocol** that allows operations between untrusted agents.
