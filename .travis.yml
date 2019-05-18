@@ -1,0 +1,28 @@
+sudo: required
+services:
+- docker   
+ 
+script:
+- ./docker_build.sh
+- ./docker_run.sh
+
+before_deploy:
+ - git config --local user.name "NeoResearch-Travis-Bot"
+ - git config --local user.email "neoresearchbot@gmail.com"
+ - export TRAVIS_TAG="latest"
+ - git tag -f $TRAVIS_TAG  
+ 
+deploy:
+  provider: releases
+  api_key: ${GH_TOKEN_NEORESEARCH_BOT}
+  file: 
+    - ./build/neo_3.0_specification_paper.pdf
+  skip_cleanup: true
+  overwrite: true
+  on:
+    branch: master
+    
+notifications:
+  email:
+    on_success: never
+    on_failure: always
