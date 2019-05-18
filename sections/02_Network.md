@@ -36,61 +36,7 @@ P2P commands can be found on [Neo Project](https://https://github.com/neo-projec
 
 ## Interacting with nodes
 
-A trivial way for interacting with external world can be done by RPC's calls, which are API's natively implemented in the NEO core library
+A trivial way for interacting with external world can be done by RPC's calls, which are API's natively implemented in the NEO core library.
+Detailed documentation regarding these calls can be found in the [API Reference](https://docs.neo.org/en-us/node/cli/apigen.html).
 
 ### Plugins
-
-### RPC Protocol Specification
-
-RPC commands can be found on [Neo Project](https://https://github.com/neo-project/neo) repository and also [Neo Plugins](https://https://github.com/neo-project/neo-plugins).
-
-A summary of RPC commands on Neo network:
-
-* `getaccountstate`
-* `getassetstate`
-* `getbestblockhash`
-* `getblock`
-* `getblockcount`
-* `getblockhash`
-* `getblockheader`
-* `getblocksysfee`
-* `getconnectioncount`
-* `getcontractstate`
-* `getpeers`
-* `getrawmempool`
-* `getrawtransaction`
-* `getstorage`
-* `gettransactionheight`
-* `gettxout`
-* `getvalidators`
-* `getversion`
-* `invoke`
-* `invokefunction`
-* `invokescript`
-* `sendrawtransaction`
-* `submitblock`
-* `validateaddress`
-
-These extra RPC commands can be found on [Neo Plugins](https://github.com/neo-project/neo-plugins).
-
-RpcWallet plugin (`RpcWallet/RpcWallet.cs`):
-
-* `claimgas`
-* `dumpprivkey`
-* `getbalance`
-* `getnewaddress`
-* `getunclaimedgas`
-* `getwalletheight`
-* `importprivkey`
-* `listaddress`
-* `sendfrom`
-* `sendmany`
-* `sendtoaddress`
-
-RpcNep5Tracker plugin (`RpcNep5Tracker/RpcNep5Tracker.cs`):
-
-* `getnep5balances`
-
-If you feel some information is still missing here, please refer to the [Official Neo API Documentation](https://docs.neo.org/en-us/node/cli/latest-version/api.html).
-
-#### RPC Protocol Specification
