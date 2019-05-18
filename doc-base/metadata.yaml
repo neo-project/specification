@@ -1,0 +1,32 @@
+---
+title: NEO 3.0 Specification
+author:
+- Igor M. Coelho
+- Vitor N. Coelho
+- Peter Lin
+- Erik Zhang
+abstract: |
+  The Community Specification Paper is a community-driven initiative to provide a technical specification for NEO blockchain.
+  Contributions are accepted via project GitHub page, so feel free to contribute.
+  Major contributions by community members will allow member to become a co-author of our Paper.
+
+  &nbsp;
+numbersections: true
+documentclass: amsart
+lot: false
+lof: false
+linkcolor: blue
+citecolor: blue
+urlcolor: blue
+link-citations: true
+cref : true
+linkReferences: true
+nameInLink: true
+toc-own-page: true
+titlepage: true
+titlepage-rule-color: "00cb00"
+logo: "doc-base/neo.png"
+logo-width: 50
+reference-section-title: "References"
+sectioncounter: 0
+...
