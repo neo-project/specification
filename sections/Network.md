@@ -39,4 +39,6 @@ P2P commands can be found on [Neo Project](https://https://github.com/neo-projec
 A trivial way for interacting with external world can be done by RPC's calls, which are API's natively implemented in the NEO core library.
 Detailed documentation regarding these calls can be found in the [API Reference](https://docs.neo.org/en-us/node/cli/apigen.html).
 
-### Plugins
+## Plugins
+
+## Interacting with NEO network: transactions, RPC and P2P protocols
