@@ -1,8 +1,6 @@
 <img src="/doc-base/neo.png" align="right" height="70"/>
 
-# NEO 3.0 Specification
-
-Community Specification Paper: A Technical Description for Neo Blockchain
+# NEO Specification
 
 ## document format
 The Community Specification Paper base document started as pure LaTeX (as a [Yellow Paper](https://github.com/NeoResearch/yellowpaper])), as usual in academic publications, however the syntax is not considered as friendly as Markdown. So, why not merge both? :)
@@ -47,7 +45,7 @@ The easiest way to build is by using docker.
 
 * Compile the specification paper using `docker_run.sh`
 
-* Output will be generated as `build/neo_3.0_specification_paper.pdf`
+* Output will be generated as `build/neo-specification.pdf`
 
 ## How to contribute
 If you know Neo technology and want to contribute, feel free to directly submit a Pull Request with the desired changes.
