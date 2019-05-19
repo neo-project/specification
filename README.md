@@ -1,4 +1,4 @@
-<img src="/doc-base/neo.png" align="right" height="70"/>
+<img src="./doc-base/neo.png" align="right" height="70"/>
 
 # NEO Specification
 
