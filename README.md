@@ -21,8 +21,6 @@ Current draft proposal includes 11 sections + references (this may be changed by
 - [Network.md](sections/Network.md) : expected release date -> Q2+ 2019
 - [Numbers.md](sections/Numbers.md) : expected release date -> Q2 2019
 - [Cryptography.md](sections/Cryptography.md) : expected release date -> Q2 2019
-- [Assets.md](sections/Assets.md) : expected release date -> Q2+ 2019
-- [Transactions.md](sections/Transactions.md) : expected release date -> Q2+ 2019
 - [NeoVM_NeoContract.md](sections/NeoVM_NeoContract.md) : expected release date -> Q2 2019
 - [dBFT.md](sections/dBFT.md) : first released 14 March, 2019. **PDF:** [Delegated Byzantine Fault Tolerance: Technical details, challenges and perspectives](https://github.com/NeoResearch/yellowpaper/blob/master/releases/08_dBFT.pdf)
 - [SmartEconomy.md](sections/SmartEconomy.md) : expected release date -> Q2+ 2019

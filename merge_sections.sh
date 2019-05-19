@@ -23,11 +23,6 @@ echo "" >> ../specification.md
 echo "&nbsp; \newpage" >> ../specification.md
 
 echo "" >> ../specification.md
-cat Assets.md >> ../specification.md
-echo "" >> ../specification.md
-echo "&nbsp; \newpage" >> ../specification.md
-
-echo "" >> ../specification.md
 cat NeoVM_NeoContract.md >> ../specification.md
 echo "" >> ../specification.md
 echo "&nbsp; \newpage" >> ../specification.md
