@@ -34,12 +34,5 @@ cat Consensus.md >> ../specification.md
 echo "" >> ../specification.md
 echo "&nbsp; \newpage" >> ../specification.md
 
-echo "" >> ../specification.md
-python chapter_heading.py "SmartEconomy.yaml" >> ../specification.md
-echo "" >> ../specification.md
-cat SmartEconomy.md >> ../specification.md   
-echo "" >> ../specification.md
-echo "&nbsp; \newpage" >> ../specification.md
-
 cd ..
 cp -r sections/images .
