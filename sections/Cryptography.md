@@ -1,7 +1,11 @@
-# Cryptography basics: Digital Signatures and Hash Functions
+# Cryptography basics
 
 Neo mainly uses SHA-256 and RIPEMD-160 functions for hashing.
 Digital Signatures are performed via elliptic curves (ECDSA), standard P-256 (secp256r1).
+
+## Digital Signatures
+
+## Hash Functions
 
 ## NeoQS
 
@@ -18,3 +22,5 @@ Currently, some slightly different variants are being proposed such as Learning 
 
 In this chapter, we describe the basic background of such problems and its perspectives of resolutions based on
 the assumption that $P != NP$.
+
+## Hybrid cryptography
