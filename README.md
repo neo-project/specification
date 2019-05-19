@@ -3,7 +3,6 @@
 # NEO Specification
 
 ## document format
-The Community Specification Paper base document started as pure LaTeX (as a [Yellow Paper](https://github.com/NeoResearch/yellowpaper])), as usual in academic publications, however the syntax is not considered as friendly as Markdown. So, why not merge both? :)
 In order to facilitate the contributions to the document, we decided to adopt pandoc format, which allows hybrid LaTeX + Markdown syntax.
 
 ### base structure
@@ -14,15 +13,15 @@ The structure of the document consists of five files:
 - [eisvogel.latex](doc-base/eisvogel.latex) : base LaTeX template (Eisvogel template with small changes)
 - [references.bib](doc-base/references.bib) : bibliography in BibTeX format
 
-Specification Paper sections are separated on `sections/` folder (these are used as source to generate `specification_paper.md` file).
+The sections are separated on `sections/` folder (these are used as source to generate `specification.md` file).
 
-Current draft proposal includes 11 sections + references (this may be changed by community, as anything else!):
+Current draft proposal includes 6 sections + references (this may be changed by community, as anything else!):
 - [Introduction.md](sections/Introduction.md) : expected release date -> Q2 2019
 - [Network.md](sections/Network.md) : expected release date -> Q2+ 2019
 - [Numbers.md](sections/Numbers.md) : expected release date -> Q2 2019
 - [Cryptography.md](sections/Cryptography.md) : expected release date -> Q2 2019
 - [NeoVM_NeoContract.md](sections/NeoVM_NeoContract.md) : expected release date -> Q2 2019
-- [Consensus.md](sections/Consensus.md) : first released 14 March, 2019. **PDF:** [Delegated Byzantine Fault Tolerance: Technical details, challenges and perspectives](https://github.com/NeoResearch/yellowpaper/blob/master/releases/08_dBFT.pdf)
+- [Consensus.md](sections/Consensus.md) : first released 14 March, 2019.
 - References (automatically generated from [references.bib](doc-base/references.bib)): expected release date -> Q2+ 2019
 
 
@@ -33,7 +32,7 @@ After pandoc and LaTeX base are available, you can simply run `make`, which will
 
 ### building specific section
 Any section can be build using command `make section` and passing `SECTION` parameter.
-For example: `make section SECTION=Consensus` will build section 08 (it will be stored on `build/dBFT.pdf`).
+For example: `make section SECTION=Consensus` will build section 08 (it will be stored on `build/Consensus.pdf`).
 
 ## automatically building using docker
 The easiest way to build is by using docker.
@@ -57,7 +56,3 @@ Please, when contributing, be careful to only add figures covered by Creative Co
 When adding new original material to this project, contributor agrees that it will be covered by Free Culture license Creative Commons [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 
 The beautiful Pandoc/LaTeX template [Eisvogel](https://github.com/Wandmalfarbe/pandoc-latex-template/) is licensed by BSD 3-Clause License.
-
-Copyleft 2018-2019
-
-From Neo Community to You
