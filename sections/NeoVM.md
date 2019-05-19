@@ -1,6 +1,4 @@
-# NeoVM and NeoContract
-
-_This section is part of the Community Yellow Paper ^[See [Community Yellow Paper](https://github.com/neoresearch/yellowpaper) repository] initiative, a community-driven technical specification for Neo blockchain._
+# NeoVM
 
 **WARNING:** this section is an **unreleased draft**.
 It is expected to be incomplete or even to carry incorrect information, so feel free to contribute with us!
@@ -108,6 +106,3 @@ Word          | Opcode | Hex | Input     | Output  | Parameter | Description
 -------------:| ------ | --- | --------- | ------- | --------- | -----------
 THROW         | 240      | F0  | none      | none (or FAULT)  | none      | Halts the execution of the vm by setting VMState.FAULT
 THROWIFNOT    | 241      | F1  | `x`      | none (or FAULT)  | none      | Removes top stack item `x`, and halts the execution of the vm by setting VMState.FAULT only if `x` is False.
-
-
-## NeoContract
