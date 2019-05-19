@@ -24,6 +24,7 @@ while [[ "$#" > 0 ]]; do case $1 in
   esac;
 done
 
+mkdir $(pwd)/build
 if (($DISABLE_SECTION)); then
 		echo "BUILDING all chapters. Complete Specification Paper.pdf";
 		docker run --rm --mount src="$(pwd)/sections",target=/sections,type=bind --mount src="$(pwd)/doc-base",target=/doc-base,type=bind --mount src="$(pwd)/.git",target=/.git,type=bind --mount src="$(pwd)/build",target=/build,type=bind -it pandoc-tex   make
