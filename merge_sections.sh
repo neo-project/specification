@@ -28,9 +28,9 @@ echo "" >> ../specification.md
 echo "&nbsp; \newpage" >> ../specification.md
 
 echo "" >> ../specification.md
-python chapter_heading.py "dBFT.yaml" >> ../specification.md
+python chapter_heading.py "Consensus.yaml" >> ../specification.md
 echo "" >> ../specification.md
-cat dBFT.md >> ../specification.md   
+cat Consensus.md >> ../specification.md   
 echo "" >> ../specification.md
 echo "&nbsp; \newpage" >> ../specification.md
 

@@ -19,7 +19,7 @@ The possibility of deploying agents with different abilities into the network is
 
 A special type of node is capable of **generating** new blocks on the blockchain, which is the bookkeeper node^[On Bitcoin network, these nodes are called Miners (due to proof-of-work paradigm), however on Neo no mining process is required to achieve consensus].
 On Neo network, these bookkeeper nodes are also called Consensus Nodes, which are elected by means of public voting and are capable of systematically proposing new blocks (by ordering and validating pending network transactions).
-Detailed information for Neo Consensus Protocol (called Delegated Byzantine Fault Tolerance) is presented on [Section @Sec:dBFT].
+Detailed information for Neo Consensus Protocol (called Delegated Byzantine Fault Tolerance) is presented on [Section @Sec:Consensus].
 
 ## Communication between nodes
 

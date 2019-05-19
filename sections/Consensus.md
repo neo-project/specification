@@ -1,4 +1,4 @@
-# Delegated Byzantine Fault Tolerance: Technical details, challenges and perspectives {#sec:dBFT}
+# Delegated Byzantine Fault Tolerance: Technical details, challenges and perspectives {#sec:Consensus}
 
 Several studies in the blockchain literature have explored partially synchronous and fully asynchronous Byzantine Fault Tolerant (BFT) systems [@Hao2018DynnamicPBFT; @Duan:2018:BAB:3243734.3243812; @miller2016honey].
 However, few of them have been applied in a real-world Smart Contract (SC) scenario - i.e. where multiple distinct decentralized applications use the same BFT system.

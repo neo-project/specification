@@ -22,7 +22,7 @@ Current draft proposal includes 11 sections + references (this may be changed by
 - [Numbers.md](sections/Numbers.md) : expected release date -> Q2 2019
 - [Cryptography.md](sections/Cryptography.md) : expected release date -> Q2 2019
 - [NeoVM_NeoContract.md](sections/NeoVM_NeoContract.md) : expected release date -> Q2 2019
-- [dBFT.md](sections/dBFT.md) : first released 14 March, 2019. **PDF:** [Delegated Byzantine Fault Tolerance: Technical details, challenges and perspectives](https://github.com/NeoResearch/yellowpaper/blob/master/releases/08_dBFT.pdf)
+- [Consensus.md](sections/Consensus.md) : first released 14 March, 2019. **PDF:** [Delegated Byzantine Fault Tolerance: Technical details, challenges and perspectives](https://github.com/NeoResearch/yellowpaper/blob/master/releases/08_dBFT.pdf)
 - [SmartEconomy.md](sections/SmartEconomy.md) : expected release date -> Q2+ 2019
 - References (automatically generated from [references.bib](doc-base/references.bib)): expected release date -> Q2+ 2019
 
@@ -34,7 +34,7 @@ After pandoc and LaTeX base are available, you can simply run `make`, which will
 
 ### building specific section
 Any section can be build using command `make section` and passing `SECTION` parameter.
-For example: `make section SECTION=dBFT` will build section 08 (it will be stored on `build/dBFT.pdf`).
+For example: `make section SECTION=Consensus` will build section 08 (it will be stored on `build/dBFT.pdf`).
 
 ## automatically building using docker
 The easiest way to build is by using docker.
