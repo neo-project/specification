@@ -49,7 +49,7 @@ Initially, the idea is to create a broad and complete initial version of the doc
 
 ## License
 
-This repository is currently MIT Licensed (for text and code), and Free Culture license Creative Commons 4.0 International (CC BY 4.0) for all figures and externally copyrighted material.
+This repository is Free Culture license Creative Commons 4.0 International (CC BY 4.0) for all figures and externally copyrighted material.
 As usual, every author shall keep the copyright of its own contribution and agree with the CC BY 4.0 license for the combined work.
 
 Please, when contributing, be careful to only add figures covered by Creative Commons licenses, and give proper references to original sources.
