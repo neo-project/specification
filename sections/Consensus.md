@@ -99,17 +99,11 @@ dBFT states are the following:
 
 * Backup : true if not primary, false otherwise
 
-* ~~RequestSent : true if block header has been proposed, false otherwise~~ (removed on dBFT 2.0 since code tracks all preparation signatures, merged as RequestSentOrReceived)
+* RequestSentOrReceived : true if a valid signature of Primary has been received, false otherwise.
 
-* ~~RequestReceived : true if block header has been received, false otherwise~~ (removed on dBFT 2.0 since code tracks all preparation signatures, merged as RequestSentOrReceived)
+* ResponseSent : true if block header confirmation has been sent (internal state used only for blocking node to triggering consensus OnTransaction event)
 
-* ~~SignatureSent : true if signature has been sent, false otherwise~~ (removed on dBFT 2.0 because of extra commit phase carrying signatures)
-
-* RequestSentOrReceived : true if a valid signature of Primary has been received, false otherwise (introduced in dBFT 2.0).
-
-* ResponseSent : true if block header confirmation has been sent (introduced in dBFT 2.0: internal state used only for blocking node to triggering consensus OnTransaction event)
-
-* CommitSent : true if block signature has been sent (this state was only introduced in dBFT 2.0 and replaced SignatureSent)
+* CommitSent : true if block signature has been sent.
 
 * BlockSent : true if block has been sent, false otherwise
 
@@ -117,11 +111,7 @@ dBFT states are the following:
 
 * MoreThanFNodesCommittedOrLost : true in the case that more than `F` nodes are locked in the committed phase or considered to be lost (introduced in dBFT 2.0).
 
-* IsRecovering : true if a valid recovery payload was received and is being processed (introduced in dBFT 2.0: internal state)
-
-
-The first dBFT handled these states explicitly as flags (ConsensusState enum).
-However, dBFT 2.0 can infer this information in a implicit manner, since it has added a track of preparations signatures and state recovery mechanisms.
+* IsRecovering : true if a valid recovery payload was received and is being processed (internal state)
 
 ## Flowchart
 
@@ -185,8 +175,6 @@ digraph PBFT {
 }
 ~~~
 
-
-
 Let's switch to  dBFT now.
 
 <!-- BEGIN COMMENT -->
@@ -218,8 +206,6 @@ digraph dBFT {
 	Backup -> ViewChanging [ label = "(C >= T exp(v+1))?\n C := 0", style="dashed" ];
 }
 ~~~
-
-
 
 On [Figure @Fig:dbft-sm], consensus node starts on `Initial` state, on view $v=0$. Given `H` and `v`, a round-robin procedure detects if current node $i$ is Primary: $(H + v) \mod R = i$ (it is set to backup otherwise).
 If node is Primary, it may proceed to `RequestSentOrReceived` after `SendPrepareRequest` action (that selects transactions and creates a new proposed block) after $T$ seconds.
@@ -254,6 +240,7 @@ In this sense, as already described for the current NEO dBFT, the minimum number
 ## Multiple block signature exposure
 
 ### Detected fault on dBFT v1.0
+
 Known Block Hash stuck fork was recently discovered in real operation of NEO blockchain, 2017.
 
 In particular, this happens due to two components of the Blocks that are selected by each node that is a primary:
