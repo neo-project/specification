@@ -28,6 +28,11 @@ echo "" >> ../specification.md
 echo "&nbsp; \newpage" >> ../specification.md
 
 echo "" >> ../specification.md
+cat Transaction.md >> ../specification.md
+echo "" >> ../specification.md
+echo "&nbsp; \newpage" >> ../specification.md
+
+echo "" >> ../specification.md
 cat NeoContract.md >> ../specification.md
 echo "" >> ../specification.md
 echo "&nbsp; \newpage" >> ../specification.md
